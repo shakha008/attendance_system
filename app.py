@@ -260,9 +260,3 @@ def generate_pdf():
 
     return send_from_directory('static', 'davomat_hisobot.pdf', as_attachment=True)
 
-if __name__ == '__main__':
-    app.run(debug=True)
-    try:
-    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-except Exception:
-    pass
